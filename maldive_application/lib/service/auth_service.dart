@@ -7,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AuthService {
   static final Future<SharedPreferences> _prefs =
       SharedPreferences.getInstance();
-
+      
   static Future<bool> checkLogin() async {
     final prefs = await _prefs;
     final token = prefs.getString('token');

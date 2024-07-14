@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 import 'package:maldive_application/service/auth_service.dart';
@@ -19,14 +17,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final _password = TextEditingController();
 
   @override
-  void initState() async {
-    super.initState();
-    bool loggedIn = await AuthService.checkLogin();
-    if (loggedIn) {
-      Navigator.pushReplacementNamed(context, "/home");
-    }
-  }
-
   Future<void> login() async {
     bool loggedIn = await AuthService.login(_email.text, _password.text);
     if (loggedIn) {

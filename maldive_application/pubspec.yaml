@@ -37,6 +37,9 @@ dependencies:
   http: 
   shared_preferences: ^2.2.3
   card_swiper: ^3.0.1
+  hover:
+  flutter_icons:
+  flutter_emoji:
 
 dev_dependencies:
   flutter_test:
